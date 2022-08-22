@@ -1,0 +1,126 @@
+html {
+    background-color: rgb(125, 136, 255);
+    font-family: 'Arial Narrow Bold', sans-serif;
+
+}
+
+body {
+    border: black solid;
+}
+
+/* Header Styles */
+
+header {
+    display: flex;
+    border: 10px ridge rgb(156, 16, 44);
+    border-radius: 10px;
+}
+
+#mainMenu {
+    outline: 0;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    color: yellow;
+    background-color: rgb(36, 18, 112);
+    font-size: 25px;
+    box-shadow:  0px 0px 40px rgb(14, 93, 124);
+    border-radius: 10px;
+}
+
+#mainMenu:hover {
+    box-shadow: 0 0 40px yellow;
+    background-color: dimgray;
+    color: azure;
+}
+
+#mainMenu:focus {
+    transition-duration: 1.5s;
+    transform: rotate(180deg);
+  }
+
+#navBar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navBar a {
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: crimson;
+    width: 25%;
+    justify-content: center;
+}
+
+#navBar a:hover {
+    background-color: rgb(95, 112, 238);
+    color: yellow;
+    font-style: oblique;
+    box-shadow: 0 0 40px yellow;
+    font-size: 21px;
+}
+
+/* Body styles */
+#sideBySide {
+    display: flex;
+}
+
+#column1 {
+    border: black solid;
+    display: flex;
+    width: 50%;
+    margin: 2% 2% 2% 20%;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#headPic {
+    border: 10px groove crimson;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color: rgba(107, 11, 30, 0.623);
+}
+
+#purpose {
+    border: 10px outset rgb(88, 88, 226);
+    width: fit-content;
+    margin-left: 15%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#pictureZone {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+}
+
+/* .pics {
+
+} */
+
+/* Right side styles */
+
+#linksToWork {
+    border: 10px double rgb(227, 248, 142);
+    border-radius: 20px;
+    width: 22%;
+    height: fit-content;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+/* Footer styles */
