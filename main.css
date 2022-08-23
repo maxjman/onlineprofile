@@ -28,16 +28,40 @@ header {
     border-radius: 10px;
 }
 
+#menuBox {
+    border: 20px solid black;
+    width: 12%;
+    height: fit-content;
+    padding: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#menuBox a {
+    display: block;
+    font-size: 24px;
+}
+
 #mainMenu:hover {
     box-shadow: 0 0 40px yellow;
     background-color: dimgray;
     color: azure;
 }
 
-#mainMenu:focus {
+.show {
+    display: block;
+}
+
+/* #mainMenu:focus {
     transition-duration: 1.5s;
     transform: rotate(180deg);
-  }
+  } */
 
 #navBar {
     display: flex;
@@ -77,9 +101,10 @@ header {
     justify-content: center;
 
 }
+/* Mainpage */
 
 #headPic {
-    border: 10px groove crimson;
+    border: 15px groove crimson;
     border-radius: 10px;
     display: inline-flex;
     align-items: center;
@@ -100,11 +125,22 @@ h1 {
     padding: 5px;
 }
 
+/* picture page */
+
 #pictureZone {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     overflow: hidden;
+}
+
+#picHeading {
+    border: 15px groove crimson;
+    border-radius: 20px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
 }
 
 /* .pics {

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html id="wholePage">
 
     <head>
         <link rel="stylesheet" type="text/css" href="main.css">
+        <script type="text/javascript" src="main.js"></script>
         <title>James Howe Software Developer Profile</title>
     </head>
 
@@ -10,7 +11,7 @@
 
         <header>
 
-            <button id="mainMenu" tabindex="1">≡</button>
+            <button onclick="menuMorph()" id="mainMenu" class="dropbtn" tabindex="1" value="≡">≡</button>
 
             <div id="navBar">
                 <a href="homepage.html">Profile</a>
@@ -19,7 +20,15 @@
                 <a href="mailerform.html">Join Mailer</a>
             </div>
 
+
         </header>
+
+        <div id="menuBox" class="dropdown-content">
+            <a href="homepage.html">Profile</a>
+            <a href="mylist.html">Favorites</a>
+            <a href="mypics.html">Gallery</a>
+            <a href="mailerform.html">Join Mailer</a>
+        </div>
 
         <div id="sideBySide">
 
