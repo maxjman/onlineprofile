@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="wholePage">
 
     <head>
         <link rel="stylesheet" type="text/css" href="main.css">
@@ -11,22 +11,39 @@
 
         <header>
 
-            <button id="mainMenu">≡</button>
+            <button onblur="timeoutMenuBlur()" onclick="menuToggle()"id="mainMenu" class="dropbtn" tabindex="1" value="≡">≡</button>
 
             <div id="navBar">
-                <a href="homepage.html">My Profile</a>
-                <a href="mylist.html">My favorites</a>
+                <a href="homepage.html">Profile</a>
+                <a href="mylist.html">Favorites</a>
                 <a href="mypics.html">Gallery</a>
                 <a href="mailerform.html">Join Mailer</a>
             </div>
 
+
         </header>
+
+        <div id="menuBox" class="dropdown-content">
+            <a href="homepage.html">Profile</a>
+            <a href="mylist.html">Favorites</a>
+            <a href="mypics.html">Gallery</a>
+            <a href="mailerform.html">Join Mailer</a>
+        </div>
 
         <div id="sideBySide">
 
+
             <div id="column1"> <!--This div changes with the page-->
 
+                <h1>Likes and shoutouts</h1>
 
+                <ul class="likeList">
+                    <li>My <a href="https://www.stashmycomics.com/publicview.asp?username=maxjman21">Comic Book Stash</a></li>
+                    <li>My <a href="https://onedrive.live.com/embed?resid=4757CD88C4F10055%21566&authkey=%21AJF-oOyhME17dkU&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=false&ejss=false">Magic the Gathering Stash</a></li>
+                    <li>My favorite news website <a href="https://www.sciencedaily.com">Science Daily</a> the only news that matters.</li>
+                    <li>Best football team of all time <a href="https://www.dallascowboys.com/">THE Dallas Cowboys.</a></li>
+                    <li>A special thanks to this <a href="https://www.appacademy.io">App Academy</a> boot camp.</li>
+                </ul>
 
             </div>  <!--End of div to change-->
 

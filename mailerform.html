@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="wholePage">
 
     <head>
         <link rel="stylesheet" type="text/css" href="main.css">
@@ -11,28 +11,65 @@
 
         <header>
 
-            <button id="mainMenu">≡</button>
+            <button onblur="timeoutMenuBlur()" onclick="menuToggle()"id="mainMenu" class="dropbtn" tabindex="1" value="≡">≡</button>
 
             <div id="navBar">
-                <a href="homepage.html">My Profile</a>
-                <a href="mylist.html">My favorites</a>
+                <a href="homepage.html">Profile</a>
+                <a href="mylist.html">Favorites</a>
                 <a href="mypics.html">Gallery</a>
                 <a href="mailerform.html">Join Mailer</a>
             </div>
 
+
         </header>
+
+        <div id="menuBox" class="dropdown-content">
+            <a href="homepage.html">Profile</a>
+            <a href="mylist.html">Favorites</a>
+            <a href="mypics.html">Gallery</a>
+            <a href="mailerform.html">Join Mailer</a>
+        </div>
 
         <div id="sideBySide">
 
             <div id="column1"> <!--This div changes with the page-->
 
-                <p>blurb about joining mailing list</p>
+                <p>Join my mailer to see updates on my most recent work. Or skip the mailer and just send me a message!</p>
 
                 <form method="post">
 
                     <fieldset>
 
                         <legend>Join Mailer</legend>
+
+                        <div>
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="first_name">
+                        </div>
+
+                        <div>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="last_name">
+                        </div>
+
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+                        <div>
+                            <label for="comments">Message</label>
+                            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="newsletterSubscribe">Sign up for mailer!</label>
+                            <input type="checkbox" id="newsletterSubscribe" name="newsletter_subscribe" checked="checked">
+                        </div>
+
+                        <div>
+                            <button type="submit">Submit</button>
+                        </div>
 
                     </fieldset>
                 </form>

@@ -28,6 +28,7 @@ header {
     border-radius: 10px;
 }
 
+
 #menuBox {
     border: 20px solid black;
     width: 12%;
@@ -125,6 +126,10 @@ h1 {
     padding: 5px;
 }
 
+.pTop {
+    color: crimson;
+}
+
 /* picture page */
 
 #pictureZone {
@@ -143,9 +148,24 @@ h1 {
     padding: 20px 0px;
 }
 
+h4 {
+    width: 80%;
+}
 /* .pics {
 
+
+
 } */
+
+/* form page */
+
+#comments {
+    margin-top: 15px;
+}
+
+#newsletterSubscribe {
+    margin: 15px 0px;
+}
 
 /* Right side styles */
 

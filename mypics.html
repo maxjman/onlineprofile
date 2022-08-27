@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="wholePage">
 
     <head>
         <link rel="stylesheet" type="text/css" href="main.css">
@@ -11,18 +11,27 @@
 
         <header>
 
-            <button id="mainMenu">≡</button>
+            <button onblur="timeoutMenuBlur()" onclick="menuToggle()"id="mainMenu" class="dropbtn" tabindex="1" value="≡">≡</button>
 
             <div id="navBar">
-                <a href="homepage.html">My Profile</a>
-                <a href="mylist.html">My favorites</a>
+                <a href="homepage.html">Profile</a>
+                <a href="mylist.html">Favorites</a>
                 <a href="mypics.html">Gallery</a>
                 <a href="mailerform.html">Join Mailer</a>
             </div>
 
+
         </header>
 
+        <div id="menuBox" class="dropdown-content">
+            <a href="homepage.html">Profile</a>
+            <a href="mylist.html">Favorites</a>
+            <a href="mypics.html">Gallery</a>
+            <a href="mailerform.html">Join Mailer</a>
+        </div>
+
         <div id="sideBySide">
+
 
             <div id="column1"> <!--This div changes with the page-->
 
@@ -30,35 +39,35 @@
 
                 <div id="pictureZone">
 
-                    <div class="pics" id="picZone1">
-                        <img src="allpics/vera.jpg" alt="dearest Vera" width="200px" height="200px">
+                    <a class="pics" href="allpics/vera.jpg" target="_blank" id="picZone1" target="_blank">
+                        <img src="allpics/vera200.jpg" alt="dearest Vera" width="200px" height="200px">
                         <h4>My greatest collaboration, Vera</h4>
-                    </div>
+                    </a>
 
-                    <div class="pics" id="picZone2">
-                        <img src="allpics/vera.jpg" alt="dearest Vera" width="200px" height="200px">
-                        <h4>My greatest collaboration, Vera</h4>
-                    </div>
+                    <a class="pics" href="allpics/menwife.jpg" target="_blank" id="picZone2">
+                        <img src="allpics/menwife200.jpg" alt="dearest wife" width="200px" height="200px">
+                        <h4>My greatest collaborator, Tara</h4>
+                    </a>
 
-                    <div class="pics" id="picZone3">
-                        <img src="allpics/vera.jpg" alt="dearest Vera" width="200px" height="200px">
-                        <h4>My greatest collaboration, Vera</h4>
-                    </div>
+                    <a class="pics" href="allpics/scarydog.jpg" target="_blank" id="picZone3">
+                        <img src="allpics/scarydog200.jpg" alt="dearest doggie" width="200px" height="200px">
+                        <h4>Fourth wheel</h4>
+                    </a>
 
-                    <div class="pics" id="picZone4">
-                        <img src="allpics/vera.jpg" alt="dearest Vera" width="200px" height="200px">
-                        <h4>My greatest collaboration, Vera</h4>
-                    </div>
+                    <a class="pics" href="allpics/plantid.jpg" target="_blank" id="picZone4">
+                        <img src="allpics/plantid200.jpg" alt="plant unknown" width="200px" height="200px">
+                        <h4>I love identifying plants I've never seen!</h4>
+                    </a>
 
-                    <div class="pics" id="picZone5">
-                        <img src="allpics/vera.jpg" alt="dearest Vera" width="200px" height="200px">
-                        <h4>My greatest collaboration, Vera</h4>
-                    </div>
+                    <a class="pics" href="allpics/nature.jpg" target="_blank" id="picZone5">
+                        <img src="allpics/nature200.jpg" alt="nature" width="200px" height="200px">
+                        <h4>Nature, I mean, its the best</h4>
+                    </a>
 
-                    <div class="pics" id="picZone6">
-                        <img src="allpics/vera.jpg" alt="dearest Vera" width="200px" height="200px">
-                        <h4>My greatest collaboration, Vera</h4>
-                    </div>
+                    <a class="pics" href="allpics/collection.jpg" target="_blank" id="picZone6">
+                        <img src="allpics/collection200.jpg" alt="postage stamp" width="200px" height="200px">
+                        <h4>I collect many things...</h4>
+                    </a>
 
 
                 </div>
